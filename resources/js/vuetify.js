@@ -1,4 +1,5 @@
 import "vuetify/styles";
+import '@mdi/font/css/materialdesignicons.css'
 import { createVuetify } from "vuetify";
 
 const customTheme = {
@@ -30,6 +31,10 @@ const customTheme = {
 };
 
 const vuetify = createVuetify({
+    icons: {
+        defaultSet: 'mdi'
+    },
+
     theme: {
         defaultTheme: "customTheme",
         themes: {

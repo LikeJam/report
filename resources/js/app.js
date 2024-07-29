@@ -1,9 +1,10 @@
 import './bootstrap';
 import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
-import vuetify from './vuetify.js';
+import vuetify from "./vuetify";
 
 createInertiaApp({
+    id: 'app',
     resolve: name => {
         const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
         return pages[`./Pages/${name}.vue`]

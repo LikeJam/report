@@ -20,8 +20,10 @@ services:
       - php-fpm
     ports:
       - "80:80"
+      - "5173:5173"
     expose:
       - 80
+      - 5173
 
   mysql:
     image: mysql:8.3.0
